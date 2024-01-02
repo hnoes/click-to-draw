@@ -1,0 +1,57 @@
+@keyframes toss {
+    0% {
+      transform: translateY(-100vh) rotate(-360deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+
+.deck-container {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background-color: rosybrown;
+    background-size: cover;
+    min-height: 80vh;
+    overflow: hidden; /*prevents overflow  */ 
+  }
+  
+  .card {
+    position: absolute;
+    margin: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: toss 0.6s ease-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+     .button {
+              background-color: #a15eb9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+  
+  .draw-button:hover {
+    background-color: #7d3d77;
+  }
+  
+  /* container for buttons */
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
